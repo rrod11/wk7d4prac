@@ -1,0 +1,73 @@
+:root {
+  --custom-background-color: #ffff64;
+}
+body {
+  margin: 0;
+}
+#top-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  top: 0;
+  background-color: var(--custom-background-color);
+}
+#search_bar > img {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  cursor: grab;
+  right: 5px;
+  top: 3px;
+  /* top: 5%;
+  left: 10%; */
+  /* background: none; */
+  /* z-index: 4; */
+}
+#search_bar {
+  position: relative;
+}
+
+#action-buttons {
+  display: flex;
+}
+.action-buttons-signup > a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+.genius-text {
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 3px;
+  color: var(--custom-background-color);
+  text-shadow: -5px 1px 0px black, 0 0 0, 0 0 0;
+}
+
+#bottom-header-container {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 41px;
+  align-items: center;
+}
+
+.bottom-header-content {
+  margin: 0 20px;
+}
+.insider {
+  border-left: 1px solid lightgrey;
+}
+.bottom-header-content > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px;
+}
+
+.bottom-header-content > a > .fa {
+  margin: 0 10px;
+}
