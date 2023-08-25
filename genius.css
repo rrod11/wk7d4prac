@@ -19,13 +19,12 @@ body {
   cursor: grab;
   right: 5px;
   top: 3px;
-  /* top: 5%;
-  left: 10%; */
-  /* background: none; */
-  /* z-index: 4; */
 }
 #search_bar {
   position: relative;
+  margin-left: 2%;
+  /* font-weight: 300;
+  font-family: "Times New Roman", Times, serif; */
 }
 
 #action-buttons {
@@ -70,4 +69,94 @@ body {
 
 .bottom-header-content > a > .fa {
   margin: 0 10px;
+}
+#top-main-news-container {
+  display: flex;
+  height: 400px;
+  position: relative;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.news {
+  width: 700px;
+}
+.news.one {
+  font-size: 15px;
+  margin: 50px auto;
+  text-transform: uppercase;
+  position: relative;
+}
+.news.one::after {
+  content: "";
+  display: block;
+  width: 550px;
+  height: 2px;
+  background: black;
+  right: 10%;
+  top: 40%;
+  position: absolute;
+}
+.news.two {
+  font-size: 35px;
+  text-transform: capitalize;
+  position: relative;
+  top: -10%;
+  width: 650px;
+  margin-right: 3px;
+  justify-content: center;
+}
+.news.three {
+  font-size: 20px;
+  position: relative;
+  top: -10%;
+  width: 650px;
+}
+.news.four {
+  font-size: 15px;
+  width: 650px;
+  text-align: left;
+}
+.news.four > span {
+  font-size: 10px;
+}
+#news-content {
+  width: 40%;
+  height: 40%;
+}
+#news-content > video {
+  margin-top: 30px;
+  margin-right: 30px;
+  width: 100%;
+}
+
+#bottom-main-news-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas: "a b . d";
+}
+
+.more-news-one {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.more-news-one > .mnews-one > vide {
+  width: 100%;
+}
+.more-news-two {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  grid-area: b;
+}
+.more-news-two > img {
+  width: 100%;
+}
+.more-news-three {
+  display: flex;
+  width: 100%;
+  grid-area: d;
 }
