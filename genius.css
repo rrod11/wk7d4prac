@@ -52,6 +52,9 @@ body {
   background-color: black;
   height: 41px;
   align-items: center;
+  position: sticky;
+  top: 0;
+  /* z-index: 10; */
 }
 
 .bottom-header-content {
