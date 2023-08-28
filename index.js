@@ -4,6 +4,7 @@
 // contain a vowel, return null.
 
 function firstVowel(str) {
+    let vowels = 'aeiou'
     if()
 }
-///
+/// confusion
